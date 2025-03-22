@@ -29,6 +29,10 @@ int main() {
             StandardiserAutomate(automate);
         testAutomate(automate);
 
+        notreAutomate=creationAutomate(*automate);
+
+        afficherAutomate(notreAutomate, automate->nbEtats, automate->nbSymboles);
+
     }
 
     printf("\nVoulez-vous voir si l'automate est determiniser? (1 = Oui, 2 = Non) : ");
@@ -60,9 +64,10 @@ int main() {
 
         }
         testAutomate(&AD);
+
         notreAutomate=creationAutomate(AD);
 
-        afficherAutomate(notreAutomate, automate->nbEtats, automate->nbSymboles);
+        afficherAutomate(notreAutomate, AD.nbEtats, AD.nbSymboles);
     }
 
 
