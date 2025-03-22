@@ -81,7 +81,7 @@ int main() {
 
         // Libération de la mémoire
         int choix2;
-        printf("Voulez vous afficher l'automate complémentaire ? (1 = Oui, 2 = Non) : ");
+        printf("Voulez vous afficher l'automate complementaire ? (1 = Oui, 2 = Non) : ");
         scanf("%d", &choix2);
         if (choix2 == 1)
         {
